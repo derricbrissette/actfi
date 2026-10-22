@@ -94,18 +94,16 @@
       flex-wrap: wrap;
       margin-bottom: 60px;
     }
-    .btn-primary {
-      background: linear-gradient(135deg, #f59e0b, #f97316);
-      color: #020617;
+    .btn-disabled {
+      background: #1e293b;
+      color: #64748b;
       padding: 16px 32px;
       border-radius: 16px;
       font-weight: 800;
       font-size: 14px;
-      text-decoration: none;
-      box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.25);
-      transition: transform 0.2s, opacity 0.2s;
+      cursor: not-allowed;
+      border: 1px solid #334155;
     }
-    .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
     .btn-secondary {
       background: #0f172a;
       border: 1px solid #1e293b;
@@ -208,10 +206,9 @@
     </p>
 
     <div class="cta-buttons">
-      <!-- Replace with your actual Lemon Squeezy Checkout URL -->
-      <a href="https://yourstore.lemonsqueezy.com/checkout/buy/your-product-id" class="btn-primary">
-        Get Full Access — $39.99/yr
-      </a>
+      <div class="btn-disabled">
+        Checkout Coming Soon (Under Review)
+      </div>
       <a href="https://app.actfi.app" class="btn-secondary">
         Sign In to App
       </a>

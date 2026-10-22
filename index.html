@@ -45,9 +45,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
       box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.3);
+      padding: 6px;
     }
+    .logo-icon svg { width: 100%; height: 100%; }
     .logo-text { font-weight: 900; letter-spacing: 1px; font-size: 16px; color: #ffffff; }
     
     main {
@@ -155,14 +156,20 @@
   
   <header>
     <div class="logo-container">
-      <div class="logo-icon">✨</div>
+      <div class="logo-icon">
+        <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M144 368L256 144L368 368" stroke="#FFFFFF" strokeWidth="48" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M184 288H328" stroke="#FFFFFF" strokeWidth="40" strokeLinecap="round" />
+          <circle cx="256" cy="288" r="24" fill="#10B981" />
+        </svg>
+      </div>
       <span class="logo-text">ACTFI</span>
     </div>
     <a href="https://app.actfi.app">Open App →</a>
   </header>
 
   <main>
-    <div class="badge">🚀 Secure, Zero-Knowledge Financial Freedom</div>
+    <div class="badge">🔒 Secure & Private Financial Freedom</div>
     
     <h1>Master your paychecks. <span>Secure your retirement.</span></h1>
 
@@ -187,17 +194,17 @@
       </div>
       <div class="feature-card">
         <div class="feature-title">Retirement Roadmap</div>
-        <div class="feature-desc">Simulate monthly compounding, inflation, and sequential account drawdowns to age 95.</div>
+        <div class="feature-desc">Simulate monthly compounding, inflation, and sequential account drawdowns in retirement.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-title">Zero-Knowledge Sync</div>
-        <div class="feature-desc">AES-GCM client-side encryption ensures your financial data remains strictly private.</div>
+        <div class="feature-title">Client-Side Encryption</div>
+        <div class="feature-desc">AES-GCM encryption ensures your financial data remains strictly secure and private.</div>
       </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2026 Actfi. All rights reserved. Secure Cloud Billing powered by Lemon Squeezy.</p>
+    <p>&copy; 2026 Actfi. All rights reserved.</p>
   </footer>
 
 </body>

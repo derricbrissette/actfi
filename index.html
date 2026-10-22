@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Actfi — Zero-Based Budgeting & Retirement Roadmap</title>
+  <title>Actfi — Zero-Based Pay-Period Budgeting & Retirement Roadmap</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -70,7 +70,7 @@
       margin-bottom: 24px;
     }
     h1 {
-      font-size: clamp(32px, 5vw, 56px);
+      font-size: clamp(32px, 5vw, 54px);
       font-weight: 900;
       letter-spacing: -0.025em;
       line-height: 1.1;
@@ -84,8 +84,8 @@
     .subtitle {
       color: #94a3b8;
       font-size: clamp(15px, 2vw, 18px);
-      max-width: 600px;
-      margin: 0 auto 36px auto;
+      max-width: 650px;
+      margin: 0 auto 40px auto;
     }
     .cta-buttons {
       display: flex;
@@ -119,11 +119,41 @@
     }
     .btn-secondary:hover { background: #1e293b; }
     
+    .comparison-section {
+      margin: 60px 0;
+      text-align: left;
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid #1e293b;
+      border-radius: 24px;
+      padding: 32px;
+    }
+    .comparison-title {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 640px) {
+      .comparison-grid { grid-template-columns: 1fr; }
+    }
+    .comp-col h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
+    .comp-col.old h3 { color: #f43f5e; }
+    .comp-col.actfi h3 { color: #10b981; }
+    .comp-col ul { list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 13px; color: #94a3b8; }
+    .comp-col li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.4; }
+    .comp-col li span { flex: 1; }
+
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       text-align: left;
+      margin-bottom: 40px;
     }
     .feature-card {
       background: rgba(15, 23, 42, 0.6);
@@ -169,12 +199,12 @@
   </header>
 
   <main>
-    <div class="badge">🔒 Secure & Private Financial Freedom</div>
+    <div class="badge">🔒 Secure & Private Household Finance</div>
     
-    <h1>Master your paychecks. <span>Secure your retirement.</span></h1>
+    <h1>Stop micro-managing every receipt. <span>Take control by pay period.</span></h1>
 
     <p class="subtitle">
-      Actfi combines zero-based pay-period budgeting with a powerful multi-account retirement roadmap simulation engine. Private, encrypted, and built for your household.
+      Traditional budgeting apps demand hours of daily transaction auditing and link to your bank accounts. Actfi gives you a proactive pay-period framework and robust retirement simulation without the headache or recurring subscription bloat.
     </p>
 
     <div class="cta-buttons">
@@ -187,10 +217,35 @@
       </a>
     </div>
 
+    <!-- Comparison Section -->
+    <div class="comparison-section">
+      <div class="comparison-title">Why Actfi is Different</div>
+      <div class="comparison-grid">
+        <div class="comp-col old">
+          <h3>Traditional Apps (YNAB / Monarch)</h3>
+          <ul>
+            <li><span>❌ Hours spent categorizing daily individual transactions</span></li>
+            <li><span>❌ Required bank syncing & third-party data scraping</span></li>
+            <li><span>❌ Subscriptions scaling up to $100+/year</span></li>
+            <li><span>❌ Cloud servers storing your raw financial credentials</span></li>
+          </ul>
+        </div>
+        <div class="comp-col actfi">
+          <h3>The Actfi Approach</h3>
+          <ul>
+            <li><span>✅ <strong>Pay-Period Focus:</strong> Align paychecks with bills once; no daily receipt auditing.</span></li>
+            <li><span>✅ <strong>100% Private:</strong> Local-first storage with optional zero-knowledge client encryption.</span></li>
+            <li><span>✅ <strong>Built for Retirement:</strong> Multi-account compounding & sequential drawdown modeling.</span></li>
+            <li><span>✅ <strong>Fair Pricing:</strong> A fraction of the cost at just $39.99/year.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-title">Pay-Period Windows</div>
-        <div class="feature-desc">Synchronize joint incomes with recurring bills so every dollar has an exact job.</div>
+        <div class="feature-desc">Synchronize joint incomes with recurring bills so every dollar has a precise job.</div>
       </div>
       <div class="feature-card">
         <div class="feature-title">Retirement Roadmap</div>
@@ -198,7 +253,7 @@
       </div>
       <div class="feature-card">
         <div class="feature-title">Client-Side Encryption</div>
-        <div class="feature-desc">AES-GCM encryption ensures your financial data remains strictly secure and private.</div>
+        <div class="feature-desc">AES-GCM encryption ensures your financial records remain private and secure.</div>
       </div>
     </div>
   </main>
